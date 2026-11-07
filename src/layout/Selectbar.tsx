@@ -2,7 +2,7 @@ import React from 'react'
 import Chat from '../components/Chats'
 // import Icons from '../components/Icons'
 import SearchField from '../components/SearchField'
-import { useAppDispatch, useAppSelector } from '../hooks/reducerHook';
+import { useAppDispatch } from '../hooks/reducerHook';
 import { closeModal } from '../reducers/modalreducer';
 
 function Selectbar() {

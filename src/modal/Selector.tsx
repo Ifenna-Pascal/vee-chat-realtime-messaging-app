@@ -1,4 +1,4 @@
-import React, { ReactNode, useEffect, useState } from "react";
+import React, { ReactElement, useEffect, useState } from "react";
 import { useTheme } from 'next-themes'
 
 // type ObjectProps = {
@@ -6,7 +6,7 @@ import { useTheme } from 'next-themes'
 // }
 
 const Selector = ({numbering}: {numbering: string}) => {
-    const object:any = {
+    const object: Record<string, ReactElement> = {
         "1" : <General />,
         "2": <Notification />,
         "3": <Help />,
@@ -25,6 +25,7 @@ const Selector = ({numbering}: {numbering: string}) => {
 const General = () => {
     const [mounted, setMounted] = useState(false);
     const [isDark, setIsDark] = useState<boolean>(false);
+    const { setTheme } = useTheme();
     
     // useEffect only runs on the client, so now we can safely show the UI
     useEffect(() => {
@@ -42,7 +43,6 @@ const General = () => {
         }
         setIsDark(!isDark);
     };
-    const {theme, setTheme} = useTheme();
      return (
         <div className="flex flex-col">
             <h1 className="header">General</h1>

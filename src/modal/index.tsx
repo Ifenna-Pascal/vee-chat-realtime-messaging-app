@@ -17,7 +17,7 @@ function ModalWraper({children}: Props) {
 
  // close the modal when clicking outside the modal.
   const modalRef = useRef<HTMLElement>();
-  const closedModal = (e:any) => {
+  const closedModal = (e: React.MouseEvent<HTMLElement>) => {
     if (e.target === modalRef.current) {
       dispatch(closeModal())
     }

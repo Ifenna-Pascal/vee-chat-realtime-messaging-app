@@ -1,6 +1,5 @@
 import React from 'react'
 import ChatHeader from '../components/ChatHeader'
-import Selectbar from './Selectbar'
 import Sidebar from './Sidebar'
 
 type Props = {

@@ -18,9 +18,9 @@ function Sidebar() {
      <div className={`w-[65px] md:flex flex-col pt-[50px] pb-[20px] h-full px-3 md:border-r-0 border-r border-gray-300 items-center bg-light-primary1 dark:bg-dark-primary2`}>
        <div className='relative flex flex-col h-full items-center'>
        <div className='flex items-center flex-col justify-self-start'>
-            <Icons onClick={()=>{}} icon='ri-chat-1-line' href='/dashboard' />
-            <Icons onClick={()=>{}} icon='ri-team-line' href='/dashboard/teams'/>
-            <Icons onClick={()=>{}} icon='ri-contacts-line'  href='/dashboard/contacts'/>
+            <Icons onClick={() => undefined} icon='ri-chat-1-line' href='/dashboard' />
+            <Icons onClick={() => undefined} icon='ri-team-line' href='/dashboard/teams'/>
+            <Icons onClick={() => undefined} icon='ri-contacts-line'  href='/dashboard/contacts'/>
         </div>
 
         <div className='flex items-center flex-col absolute bottom-0 justify-self-end align-self-end'>
